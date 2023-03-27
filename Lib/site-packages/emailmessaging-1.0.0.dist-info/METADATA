@@ -1,0 +1,14 @@
+Metadata-Version: 2.0
+Name: emailmessaging
+Version: 1.0.0
+Summary: Simple email messaging
+Home-page: UNKNOWN
+Author: Simon
+Author-email: simon.stoiljkovikj@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Dist: envelopes
+
+UNKNOWN
+
+

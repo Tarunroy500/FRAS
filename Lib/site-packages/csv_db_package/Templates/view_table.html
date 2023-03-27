@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+</head>
+<body>
+<h2>File uploaded Successfully</h2>
+{{table}}
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script>
+     function my_button_click_handler()
+          {
+                var rowId = event.target.parentNode.parentNode.id;
+                var data = document.getElementById(rowId).querySelectorAll(".row-data");
+                var p_id = data[0].innerHTML;
+                alert('Button Clicked with row_id =' + rowId + ' p_id =as' + p_id);
+                $.ajax(
+                {
+                      type:'POST',
+                      contentType:'application/json;charset-utf-08',
+                      dataType:'json',
+                      url:'http://localhost:8000/delete_data?value='+p_id,
+                }
+                );
+
+          }
+     function my_update_data()
+          {
+                var rowId = event.target.parentNode.parentNode.id;
+                var data = document.getElementById(rowId).querySelectorAll(".row-data");
+                var p_id = data[0].innerHTML;
+                alert('Button Clicked with row_id =' + rowId + ' p_id =as' + p_id);
+                window.location.href="/update_data/p_id="+p_id
+          }
+</script>
+<script>
+     function redirect_to_create()
+            {
+                  window.location.href="/add"
+            }
+</script>
+</html>

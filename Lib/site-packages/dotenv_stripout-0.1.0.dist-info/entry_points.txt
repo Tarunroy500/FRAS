@@ -1,0 +1,3 @@
+[console_scripts]
+dotenv-stripout=dotenv_stripout.cli:cli
+

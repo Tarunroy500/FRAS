@@ -1,0 +1,2 @@
+[console_scripts]
+py-sync-dotenv = py_sync_dotenv.cli:main

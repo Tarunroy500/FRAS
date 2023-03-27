@@ -1,0 +1,57 @@
+Metadata-Version: 2.1
+Name: csv-db-package
+Version: 0.0.3
+Summary: This package is found useful for those who wants to modify their CSV file without using database.It creates a local server that having a functionality of uploading a csv file and then perform crud operations through browser itself.
+Home-page: https://github.com/ankitaliya/csv_db_package
+Author: Ankita Liya
+Author-email: ankitaliya321@gmail.com
+License: UNKNOWN
+Project-URL: Bug Tracker, https://github.com/ankitaliya/csv_db_package/issues
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: mysql-connector-python
+Requires-Dist: Jinja2
+Requires-Dist: pandas
+
+# csv_db_package
+Package having the local server module to upload a csv file and perform CRUD operations on the data shown using different features through database.
+
+## Installation
+pip install csv_db_package
+
+---
+### STEPS TO INSTALL & MODIFY THE PROJECT 
+-Activate your python venv
+-Install the requirements given:
+    python
+    pip install -r requirements.txt
+    
+Mysql is used as a database engine here.
+-Set env variables
+  <br/>`$env:HOST= your hostname for mysql`
+  <br/>`$env:USER= your username`
+  <br/>`$env:PASSWORD= your password`
+
+-Run server inside directory by using command
+python fileserver.py
+
+-example table
+
+| First column | Second column |                                    |
+|--------------|---------------|------------------------------------|
+| Content Cell | Content Cell  | [update](#update "Goto heading-1") |
+| Content Cell | Content Cell  | [update](#update "Goto heading-1") |
+
+
+___
+© 2022 Ankita Liya
+
+This repository is licensed under the MIT license. See LICENSE for details.
+
+
+
